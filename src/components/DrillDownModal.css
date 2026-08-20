@@ -1,0 +1,43 @@
+.drilldown-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--amber);
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.drilldown-heading {
+  font-family: var(--font-voice);
+  font-size: 19px;
+  margin-bottom: 18px;
+}
+
+.drilldown-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.drilldown-table th,
+.drilldown-table td {
+  border: 1px solid var(--border);
+  padding: 7px 9px;
+  text-align: left;
+  color: var(--text-secondary);
+}
+
+.drilldown-table th {
+  color: var(--amber);
+  font-weight: 600;
+}
+
+.drilldown-empty {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 12px;
+}

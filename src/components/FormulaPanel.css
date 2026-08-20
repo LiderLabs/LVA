@@ -1,0 +1,73 @@
+.formula-result {
+  font-family: var(--font-mono);
+  font-size: 28px;
+  color: var(--amber);
+  padding: 14px 0 6px;
+  min-height: 40px;
+}
+
+.formula-hint {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+}
+
+.formula-hint code {
+  color: var(--info);
+  font-family: var(--font-mono);
+}
+
+.formula-chip-label {
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 12px 0 6px;
+}
+
+.formula-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.formula-chip {
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface-raised);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.formula-chip:hover {
+  border-color: var(--amber);
+  color: var(--amber);
+}
+
+.formula-chip-fn {
+  color: var(--info);
+}
+
+.formula-bi-tag {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 7px;
+  border-radius: 10px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  color: var(--good);
+  font-size: 9.5px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 600;
+}

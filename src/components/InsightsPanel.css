@@ -1,0 +1,36 @@
+.insights-section {
+  margin-bottom: 20px;
+}
+
+.insights-section-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.insights-section-title.descriptive { color: var(--info); }
+.insights-section-title.diagnostic { color: var(--warn); }
+.insights-section-title.decision { color: var(--good); }
+
+.insights-bullet {
+  font-size: 13px;
+  color: var(--text-primary);
+  line-height: 1.6;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--border-strong);
+  border-radius: 3px;
+  background: var(--surface-raised);
+  margin-bottom: 8px;
+}
+
+.insights-empty {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}

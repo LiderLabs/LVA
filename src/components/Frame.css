@@ -1,0 +1,75 @@
+.frame {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  transition: border-color 160ms cubic-bezier(0.2, 0, 0, 1), box-shadow 200ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+/* Grid items managed by react-grid-layout MUST be absolute */
+.frame.grid-frame {
+  position: absolute !important;
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+}
+
+.frame.grid-frame:active {
+  cursor: grabbing;
+}
+
+.frame.clickable:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.frame.selected {
+  border-color: var(--brand-blue);
+  box-shadow: 0 0 0 1px var(--brand-blue), 0 6px 24px rgba(47, 111, 237, 0.25);
+}
+
+.frame-corner {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  opacity: 0.85;
+}
+
+.frame-corner.tl {
+  top: -1px;
+  left: -1px;
+  border-top: 1.5px solid var(--amber);
+  border-left: 1.5px solid var(--amber);
+}
+
+.frame-corner.tr {
+  top: -1px;
+  right: -1px;
+  border-top: 1.5px solid var(--amber);
+  border-right: 1.5px solid var(--amber);
+}
+
+.frame-corner.bl {
+  bottom: -1px;
+  left: -1px;
+  border-bottom: 1.5px solid var(--amber);
+  border-left: 1.5px solid var(--amber);
+}
+
+.frame-corner.br {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 1.5px solid var(--amber);
+  border-right: 1.5px solid var(--amber);
+}
+
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+  font-weight: 600;
+}
